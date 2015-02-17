@@ -43,7 +43,7 @@ events =
 # DIRECTIVE DEFINITION
 
 sliderDirective = ($timeout) ->
-  restrict: 'E'
+  restrict: 'EA'
   scope:
     floor:        '@'
     ceiling:      '@'
@@ -220,7 +220,10 @@ sliderDirective = ($timeout) ->
 
       $timeout updateDOM
       scope.$watch w, updateDOM, true for w in watchables
-      window.addEventListener 'resize', updateDOM
+      if window.addEventListener
+        window.addEventListener "resize", updateDOM
+      else if window.attachEvent
+        window.attachEvent "resize", updateDOM
 
 qualifiedDirectiveDefinition = [
   '$timeout'
