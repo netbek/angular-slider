@@ -223,7 +223,7 @@ sliderDirective = ($timeout) ->
       if window.addEventListener
         window.addEventListener "resize", updateDOM
       else if window.attachEvent
-        window.attachEvent "resize", updateDOM
+        window.attachEvent "onresize", updateDOM
 
 qualifiedDirectiveDefinition = [
   '$timeout'

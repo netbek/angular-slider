@@ -305,7 +305,7 @@
             if (window.addEventListener) {
               return window.addEventListener("resize", updateDOM);
             } else if (window.attachEvent) {
-              return window.attachEvent("resize", updateDOM);
+              return window.attachEvent("onresize", updateDOM);
             }
           }
         };
