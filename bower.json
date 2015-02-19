@@ -16,6 +16,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "ignore": ["*",
-    "!dist"
+    "!dist/css/ui.slider.css",
+	"!dist/css/ui.slider.min.css",
+	"!dist/js/ui.slider.js",
+	"!dist/js/ui.slider.min.js"
   ]
 }
