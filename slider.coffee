@@ -226,7 +226,7 @@ qualifiedDirectiveDefinition = [
 
 module = (window, angular) ->
   angular
-    .module(MODULE_NAME, [])
+    .module(MODULE_NAME, ['ui.slider.templates'])
     .directive(SLIDER_TAG, qualifiedDirectiveDefinition)
 
 module window, window.angular

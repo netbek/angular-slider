@@ -315,7 +315,7 @@
   qualifiedDirectiveDefinition = ['$timeout', sliderDirective];
 
   module = function(window, angular) {
-    return angular.module(MODULE_NAME, []).directive(SLIDER_TAG, qualifiedDirectiveDefinition);
+    return angular.module(MODULE_NAME, ['ui.slider.templates']).directive(SLIDER_TAG, qualifiedDirectiveDefinition);
   };
 
   module(window, window.angular);
