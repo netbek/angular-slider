@@ -12,7 +12,14 @@
     "slider"
   ],
   "devDependencies": {
-    "coffee-script": "latest"
+    "coffee-script": "latest",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.12.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-html2js": "^0.3.0"
   },
   "author": "POPSUGAR",
   "license": "MIT",

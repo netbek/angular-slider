@@ -56,13 +56,7 @@ sliderDirective = ($timeout) ->
     ngModel:      '=?'
     ngModelLow:   '=?'
     ngModelHigh:  '=?'
-  template: '''
-    <div class="bar"><div class="selection"></div></div>
-    <div class="handle low"></div><div class="handle high"></div>
-    <div class="bubble limit low">{{ values.length ? values[floor || 0] : floor }}</div>
-    <div class="bubble limit high">{{ values.length ? values[ceiling || values.length - 1] : ceiling }}</div>
-    <div class="bubble value low">{{ values.length ? values[local.ngModelLow || local.ngModel || 0] : local.ngModelLow || local.ngModel || 0 }}</div>
-    <div class="bubble value high">{{ values.length ? values[local.ngModelHigh] : local.ngModelHigh }}</div>'''
+  templateUrl: 'ui.slider.html'
   compile: (element, attributes) ->
 
     # Check if it is a range slider
